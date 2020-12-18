@@ -1,29 +1,37 @@
+/*This is the CSS Style Sheet for Horiseon's Main Page */
+
+/* Applying border box sizing, basic formatting, and text coloration for page*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color:white;
 }
 
+/* Setting default page color */
 body {
     background-color: #d9dcd6;
 }
 
+/* Applying text and background formatting, as well as box sizing */
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
 }
 
+/* Applying display and font formatting to Horiseon Logo */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* Discoloration for letters SEO in Horiseon */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/* Applying positioning, box size, and text formatting to the navigation bar*/
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -32,25 +40,28 @@ body {
     font-size: 20px;
 }
 
+/* Removes any dots or numbers for navigation list */
 .header nav ul {
     list-style-type: none;
 }
 
+/* Adding spacing for list navigation list */
 .header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Adding color values to navigation links */
 a {
-    color: #ffffff;
     text-decoration: none;
 }
 
+/* Adjusting font size for all articles conteent*/
 p {
     font-size: 16px;
 }
-
-.hero {
+/* Adjusting size of marketing photo*/
+.hero { 
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -58,23 +69,47 @@ p {
     background-size: cover;
     background-position: center;
 }
-
+/* Setting images which are to be to the left to the left with margins on the side of the blue box*/
 .float-left {
     float: left;
     margin-right: 25px;
 }
 
+/* Setting images which are to be to the right to the right with margins on the side of the blue box*/
 .float-right {
     float: right;
     margin-left: 25px;
 }
 
+/* Adjusting size of the content with spacing between photos*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* Applying spacing, size, and color to content article*/
+/* Applying font formatting to text within article*/ 
+.further-content {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+}
+
+/* Applying image sizing to images within article*/
+.further-content img {
+    max-height: 200px;
+}
+
+/* Applying font and spacing for 2nd tier headers*/
+.further-content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Floating benefits to the right, applying sizing and spacing to section*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -86,35 +121,24 @@ p {
     background-color: #2589bd;
 }
 
+/* Applying margins to all articles in benefits */
 .all-benefits {
     margin-bottom: 32px;
-    color: #ffffff;
 }
 
+/* adjusting size of images in benefits */
 .all-benefits img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.further-content {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+/* Applying text coloration to footer */
+.footer{
+    color:black;
 }
 
-.further-content img {
-    max-height: 200px;
-}
-
-.further-content h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* Applying box formatting, and font formatting to footer */
 footer {
     padding: 30px;
     clear: both;
@@ -122,6 +146,7 @@ footer {
     text-align: center;
 }
 
+/* Adjusting heading size for the footer */
 footer h2 {
     font-size: 20px;
 }
